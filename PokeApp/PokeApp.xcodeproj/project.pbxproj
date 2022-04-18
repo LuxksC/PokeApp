@@ -16,6 +16,13 @@
 		05B3199528065BF200E0ED36 /* PokeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3199428065BF200E0ED36 /* PokeAppTests.swift */; };
 		05B3199F28065BF200E0ED36 /* PokeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B3199E28065BF200E0ED36 /* PokeAppUITests.swift */; };
 		05B319A128065BF200E0ED36 /* PokeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B319A028065BF200E0ED36 /* PokeAppUITestsLaunchTests.swift */; };
+		05B319B428074A8A00E0ED36 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B319B328074A8A00E0ED36 /* Colors.swift */; };
+		05B319B728074D8F00E0ED36 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B319B628074D8F00E0ED36 /* IconTextButton.swift */; };
+		05B319B92807526200E0ED36 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B319B82807526200E0ED36 /* Font.swift */; };
+		05B319BE28075DBA00E0ED36 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05B319BD28075DBA00E0ED36 /* Nunito-Bold.ttf */; };
+		05B319C028075F3B00E0ED36 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B319BF28075F3B00E0ED36 /* Metrics.swift */; };
+		05B319C328076A0F00E0ED36 /* UIStackView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B319C228076A0F00E0ED36 /* UIStackView+extensions.swift */; };
+		05B319C528076E9B00E0ED36 /* UIImage+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B319C428076E9B00E0ED36 /* UIImage+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		05B3199A28065BF200E0ED36 /* PokeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B3199E28065BF200E0ED36 /* PokeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppUITests.swift; sourceTree = "<group>"; };
 		05B319A028065BF200E0ED36 /* PokeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05B319B328074A8A00E0ED36 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		05B319B628074D8F00E0ED36 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
+		05B319B82807526200E0ED36 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		05B319BD28075DBA00E0ED36 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Bold.ttf"; path = "../../../../../../../Documentos/Laser/font/Nunito/static/Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		05B319BF28075F3B00E0ED36 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		05B319C228076A0F00E0ED36 /* UIStackView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+extensions.swift"; sourceTree = "<group>"; };
+		05B319C428076E9B00E0ED36 /* UIImage+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				05B319AD28065C0400E0ED36 /* Application */,
+				05B319B528074D3000E0ED36 /* Components */,
+				05B319B228074A5E00E0ED36 /* DesignSystem */,
+				05B319C1280769DF00E0ED36 /* Extensions */,
 				05B319AF28065CC200E0ED36 /* Scenes */,
 				05B3198628065BF100E0ED36 /* Assets.xcassets */,
 				05B3198828065BF200E0ED36 /* LaunchScreen.storyboard */,
@@ -157,6 +174,42 @@
 				05B3197E28065BEF00E0ED36 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		05B319B228074A5E00E0ED36 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				05B319BA2807541C00E0ED36 /* Fonts */,
+				05B319B328074A8A00E0ED36 /* Colors.swift */,
+				05B319B82807526200E0ED36 /* Font.swift */,
+				05B319BF28075F3B00E0ED36 /* Metrics.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		05B319B528074D3000E0ED36 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				05B319B628074D8F00E0ED36 /* IconTextButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		05B319BA2807541C00E0ED36 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				05B319BD28075DBA00E0ED36 /* Nunito-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		05B319C1280769DF00E0ED36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05B319C228076A0F00E0ED36 /* UIStackView+extensions.swift */,
+				05B319C428076E9B00E0ED36 /* UIImage+extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B3198A28065BF200E0ED36 /* LaunchScreen.storyboard in Resources */,
+				05B319BE28075DBA00E0ED36 /* Nunito-Bold.ttf in Resources */,
 				05B3198728065BF100E0ED36 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,10 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B319C328076A0F00E0ED36 /* UIStackView+extensions.swift in Sources */,
 				05B3198528065BEF00E0ED36 /* PokeApp.xcdatamodeld in Sources */,
 				05B3197F28065BEF00E0ED36 /* LoginViewController.swift in Sources */,
+				05B319B428074A8A00E0ED36 /* Colors.swift in Sources */,
 				05B3197B28065BEF00E0ED36 /* AppDelegate.swift in Sources */,
 				05B3197D28065BEF00E0ED36 /* SceneDelegate.swift in Sources */,
+				05B319B728074D8F00E0ED36 /* IconTextButton.swift in Sources */,
+				05B319B92807526200E0ED36 /* Font.swift in Sources */,
+				05B319C028075F3B00E0ED36 /* Metrics.swift in Sources */,
+				05B319C528076E9B00E0ED36 /* UIImage+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
